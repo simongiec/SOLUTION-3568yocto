@@ -177,6 +177,7 @@ The rootfs.img will be generated in `yocto/build/tmp/deploy/images/rockchip-rk35
 
 ### Step 8: Flash and Test the Image
 Flash the rootfs.img using `RKDevTool`. 
+
 ![image](https://github.com/simongiec/SOLUTION-3568yocto/assets/169290270/d514be85-36b4-4520-ba3b-4d0e2c3e4d0f)
 
 Additional images such as U-Boot and recovery can be compiled using `./build.sh all`
@@ -217,3 +218,8 @@ Ignoring this warning, we continued compiling and encountered another error in m
 
 Compilation and Burning Check
 Following Step 8 for flashing and power on the device, we did not see any ARED-related services. However, the yocto/build/tmp/ directory contained the compilation logs for the ARED directory.
+
+## 7.Our questions
+Question1. According to the steps in section 6 "Our Recent Activities," are we doing it correctly?
+
+Question2. For the repositories created for us yesterday(YOCTO-META-ARED-RK3568), what code do we need to upload to them? We have no idea how to modify the YOCTO-META-ARED repository yet.
