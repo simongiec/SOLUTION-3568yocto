@@ -118,7 +118,8 @@ Step 3: Configure Machine Settings
 
 Machine定义在device/rockchip/common/configs/Config.in.yocto中，如下：
 
-![image](https://github.com/simongiec/SOLUTION-3568yocto/assets/169290270/4ab0ba5f-099d-4f3e-b962-0352e76f8599)
+![image](https://github.com/simongiec/SOLUTION-3568yocto/assets/169290270/a37bd595-7cd8-4357-b971-cbb569feec01)
+
 
    
    
