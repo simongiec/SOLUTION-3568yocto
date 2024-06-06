@@ -118,41 +118,8 @@ Step 3: Configure Machine Settings
 
 Machine定义在device/rockchip/common/configs/Config.in.yocto中，如下：
 
-config RK_YOCTO_MACHINE
+![image](https://github.com/simongiec/SOLUTION-3568yocto/assets/169290270/4ab0ba5f-099d-4f3e-b962-0352e76f8599)
 
-	string "yocto machine name"
- 
-	default "rockchip-px3se-evb" if RK_CHIP_FAMILY = "px3se"
- 
-	default "rockchip-rk3288-evb" if RK_CHIP_FAMILY = "rk3288"
- 
-	default "rockchip-rk3308-evb" if RK_CHIP_FAMILY = "rk3308"
- 
-	default "rockchip-px30-evb" if RK_CHIP_FAMILY = "px30"
- 
-	default "rockchip-rk3326-evb" if RK_CHIP_FAMILY = "rk3326"
- 
-	default "rockchip-rk3328-evb" if RK_CHIP_FAMILY = "rk3328"
- 
-	default "rockchip-rk3399-sapphire-excavator" \
- 
-		if RK_CHIP_FAMILY = "rk3399"
-  
-	default "rockchip-rk3399pro-evb" if RK_CHIP_FAMILY = "rk3399pro"
- 
-	default "rockchip-rk3566-evb" if RK_CHIP = "rk3566"
- 
-	default "rockchip-rk3568-evb" if RK_CHIP = "rk3568"
- 
-	default "rockchip-rk3562-evb" if RK_CHIP_FAMILY = "rk3562"
- 
-	default "rockchip-rk3588-evb" if RK_CHIP_FAMILY = "rk3588"
- 
-	default "rockchip-${RK_CHIP}-evb"
- 
-	help
- 
-	  Basename of machine file under yocto/meta-rockchip/conf/machine/.
    
    
 RK3568的machine默认rockchip-rk3568-evb，其他系统信息如cpu架构等可查看rockchip-rk3568-evb.conf文件，路径linux-debian-rk356x\yocto\meta-rockchip\conf\machin。
