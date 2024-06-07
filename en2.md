@@ -223,3 +223,13 @@ Following Step 8 for flashing and power on the device, we did not see any ARED-r
 Question1. According to the steps in section 6 "Our Recent Activities," are we doing it correctly?
 
 Question2. For the repositories created for us yesterday(YOCTO-META-ARED-RK3568), what code do we need to upload to them? We have no idea how to modify the YOCTO-META-ARED repository yet.
+
+===============
+Customer reply：
+To answer your questions of the section 6: Our recent activities 
+1. We don't need to include the YOCTO-VIRTUAL-ENVIRONMENT-BUILD layer
+2. 2. If you modified the yocto-meta-ared code during migration, you need to push the latest code to the yocto-meta-ared-rk3568 repository
+
+Placide，3:04 @Simon Also If Step 1 to Step 8 arr done as you mentioned previously, you may push and we test and afterward, move step by step Henri，4:10 can you update the meta layer code only on the repo ? 
+
+Henri，4:22 this is what the meta layer should include when we review that then will be able to move forward Full List of What a Yocto Meta Layer Should Include Configuration Directory: conf/ layer.conf: Contains metadata about the layer such as dependencies and compatibility. machine/ rk3568.conf: Machine configuration file for the RK3568 hardware. Kernel Recipes Directory: recipes-kernel/ linux/ linux-rk3568.bb: Recipe for building the Linux kernel for the RK3568 hardware. Bootloader Recipes Directory: recipes-bsp/ u-boot/ u-boot-rk3568.bb: Recipe for building the U-Boot bootloader for the RK3568 hardware. Image Recipes Directory: recipes-core/ images/ core-image-rk3568.bb: Recipe for building the core image for the RK3568 hardware. Additional Recipes Directory (if needed): recipes-* This can include recipes for additional software packages, drivers, or any other necessary components specific to the hardware. README File: README.md: Documentation providing an overview of the meta layer, instructions for use, and any additional notes.
